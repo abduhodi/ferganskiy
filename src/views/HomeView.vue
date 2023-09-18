@@ -162,4 +162,17 @@ import Header from "../components/Header.vue";
     font-weight: 500;
   }
 }
+@media (max-width: 1024px) {
+  .help-card-image {
+    display: none;
+  }
+  .help-card-items {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .help-card-item {
+    width: 100%;
+  }
+}
 </style>
