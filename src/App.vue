@@ -10,4 +10,11 @@ import HomeView from "./views/HomeView.vue";
 .container {
   width: 940px;
 }
+@media (max-width: 1200px) {
+  .container {
+    width: 740px;
+  }
+}
+@media (max-width: 768px) {
+}
 </style>

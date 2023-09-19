@@ -64,6 +64,151 @@
       </div>
     </div>
   </section>
+  <section class="about">
+    <div class="container">
+      <div class="about-items">
+        <div class="about-content">
+          <div class="about-content-title">
+            <h5>about company</h5>
+            <h2>Get’s IT Solutions For Expert Consultants</h2>
+          </div>
+          <p class="about-content-body">
+            Sed ut perspiciatis unde omnis natus error sit voluptatem accusa
+            ntium doloremque laudantium totam rem aperiamea queipsa quae abillo
+            inventore veritatis et quasi architecto beatae vitae dicta sunt
+            explicabo.
+          </p>
+          <div class="about-content-footer">
+            <img src="../assets/about-icon.png" alt="about-icon" />
+            <p>
+              <b>Professinoal Consultants</b><br />
+              <span>
+                Quis autem vel eum iure reprehenderit quin voluptate velit esse
+                quam Lorem ipsum dolor sit amet.
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="about-img">
+          <img src="../assets/hero-img.jpg" alt="about-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <setion class="service">
+    <div class="container">
+      <div class="service-items">
+        <p>POPULAR IT SERVICES</p>
+        <h2>Our Professional Solutions<br />For IT Business</h2>
+        <div class="service-cards">
+          <div class="service-card-item">
+            <img
+              src="https://www.rrdevs.net/demos/html/techex/assets/img/icon/sicon1.png"
+              alt="service-img1"
+            />
+            <h3>Manage IT Services</h3>
+            <p>Sed perspicias unde omnis natus error volute</p>
+            <a href="">
+              Learn more
+              <span
+                ><svg
+                  class="w-4 h-5 text-lime-50000 dark:text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  /></svg></span
+            ></a>
+          </div>
+          <div class="service-card-item">
+            <img
+              src="https://www.rrdevs.net/demos/html/techex/assets/img/icon/sicon2.png"
+              alt="service-img2"
+            />
+            <h3>Product Engineering</h3>
+            <p>Sed perspicias unde omnis natus error volute</p>
+            <a href="">
+              Learn more
+              <span
+                ><svg
+                  class="w-4 h-5 text-lime-50000 dark:text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  /></svg></span
+            ></a>
+          </div>
+          <div class="service-card-item">
+            <img
+              src="https://www.rrdevs.net/demos/html/techex/assets/img/icon/sicon3.png"
+              alt="service-img3"
+            />
+            <h3>Web Development</h3>
+            <p>Sed perspicias unde omnis natus error volute</p>
+            <a href="">
+              Learn more
+              <span
+                ><svg
+                  class="w-4 h-5 text-lime-50000 dark:text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  /></svg></span
+            ></a>
+          </div>
+          <div class="service-card-item">
+            <img
+              src="https://www.rrdevs.net/demos/html/techex/assets/img/icon/sicon4.png"
+              alt="service-img4"
+            />
+            <h3>Digital Solutions</h3>
+            <p>Sed perspicias unde omnis natus error volute</p>
+            <a href="">
+              Learn more
+              <span
+                ><svg
+                  class="w-4 h-5 text-lime-50000 dark:text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  /></svg></span
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </setion>
 </template>
 
 <script setup>
@@ -71,6 +216,7 @@ import Header from "../components/Header.vue";
 </script>
 
 <style lang="scss" scoped>
+// section --- help
 .help {
   width: 100%;
   display: flex;
@@ -172,6 +318,203 @@ import Header from "../components/Header.vue";
 }
 @media (max-width: 767px) {
   .help-card-item {
+    width: 100%;
+  }
+}
+// section --- about
+.about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.about-items {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+.about-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.about-content-title {
+  width: 100%;
+  h5 {
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #086ad7;
+  }
+  h2 {
+    font-size: 42px;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000;
+    line-height: 50px;
+  }
+}
+.about-content-body {
+  width: 100%;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #696969;
+}
+.about-content-footer {
+  width: 100%;
+  padding: 20px 30px;
+  display: flex;
+  gap: 20px;
+  border: 2px solid #a19f9f;
+  border-radius: 8px;
+  transition: all 0.2s linear;
+  &:hover {
+    border-color: #086ad7;
+  }
+  img {
+    width: 60px;
+    height: 50px;
+    object-fit: cover;
+  }
+  p {
+    b {
+      font-size: 22px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+    }
+    span {
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      color: #696969;
+    }
+  }
+}
+.about-img {
+  width: 50%;
+  img {
+    border-radius: 10px;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+}
+@media (max-width: 991px) {
+  .about-items {
+    flex-direction: column-reverse;
+  }
+  .about-img {
+    width: 100%;
+  }
+  .about-content {
+    width: 100%;
+  }
+  .about-content-title {
+    margin-top: 20px;
+    h2 {
+      margin-top: 10px;
+      width: 80%;
+    }
+  }
+  .about-content-body {
+    line-height: 25px;
+  }
+}
+// section --- service ---------------------//
+.service {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0px;
+  background-color: #211e3b;
+  margin-top: 100px;
+}
+.service-items {
+  width: 100%;
+  color: #fff;
+  p {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+  }
+}
+.service-cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 50px;
+}
+.service-card-item {
+  width: calc((100% - 60px) / 4);
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #a8a6a62c;
+  border-radius: 10px;
+  padding: 50px 0px;
+  transition: all 0.2s linear;
+  &:hover {
+    background-color: #4944777a;
+    border-color: #4944777a;
+  }
+  img {
+    width: 60%;
+    object-fit: cover;
+  }
+  h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  p {
+    width: 80%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #a8a3a3;
+  }
+  a {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #8f8f8ffa;
+    transition: all 0.2s linear;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .service-card-item {
+    width: calc((100% - 40px) / 2);
+  }
+}
+@media (max-width: 768px) {
+  .service-card-item {
     width: 100%;
   }
 }
