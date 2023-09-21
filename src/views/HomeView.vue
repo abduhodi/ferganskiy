@@ -209,6 +209,100 @@
       </div>
     </div>
   </setion>
+  <section class="team mt-20 mb-52">
+    <div class="container mx-auto">
+      <div class="team-items w-full">
+        <div class="team-items-top w-full flex justify-between items-center">
+          <div class="team-items-top-left">
+            <p class="text-blue-700 font-bold">EXCLUSIVE MEMBERS</p>
+            <h2 class="text-blue-950 text-3xl font-bold">
+              Meet Our Experience Team<br />Members
+            </h2>
+          </div>
+          <a
+            class="team-items-top-right flex justify-between items-center w-52 px-5 py-5 bg-slate-300 text-black border-none rounded text-sm fonst-bold cursor-pointer hover:bg-slate-200 active:bg-slate-300"
+          >
+            <span type="button" class="uppercase select-none"
+              >view all members</span
+            >
+            <span
+              ><svg
+                class="w-4 h-5 text-lime-50000 dark:text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                /></svg
+            ></span>
+          </a>
+        </div>
+        <div class="team-items-cards mt-44">
+          <div
+            class="team-card flex flex-col items-center justify-center w-1/5 relative"
+          >
+            <img
+              src="@/assets/hero-img.jpg"
+              alt="team1"
+              class="w-3/4 h-52 object-cover absolute border-none rounded-lg -top-24"
+            />
+            <div
+              class="w-full h-60 border-none rounded-lg bg-slate-100 hover:bg-blue-600 group transition-all duration-300 ease-linear flex flex-col justify-end"
+            >
+              <p
+                class="member-name text-xl text-center font-bold opacity-90 group-hover:text-white group-hover:opacity-100 transition-all duration-300 ease-linear"
+              >
+                Wallace S. Camacho
+              </p>
+              <p
+                class="member-title text-md font-bold text-center opacity-50 group-hover:text-white group-hover:opacity-100 transition-all duration-300 ease-linear"
+              >
+                Business Manager
+              </p>
+              <p class="w-3/4 mx-auto flex justify-center gap-3 my-3">
+                <a
+                  href="https://www.linkedin.com/in/madiyorjonodilov/"
+                  target="_blank"
+                >
+                  <font-awesome-icon
+                    icon="fa-brands fa-linkedin"
+                    class="text-xl group-hover:text-white cursor-pointer transition-all duration-300 ease-linear"
+                  />
+                </a>
+                <a href="https://github.com/madiyorbekodilov" target="_blank">
+                  <font-awesome-icon
+                    icon="fa-brands fa-github"
+                    class="text-xl group-hover:text-white cursor-pointer transition-all duration-300 ease-linear"
+                  />
+                </a>
+                <a href="https://t.me/Madiyorbek_Odilov" target="_blank">
+                  <font-awesome-icon
+                    icon="fa-brands fa-telegram"
+                    class="text-xl group-hover:text-white cursor-pointer transition-all duration-300 ease-linear"
+                  />
+                </a>
+                <a
+                  href="mail.google.com/odilovmadiyor029@gmail.com"
+                  target="_blank"
+                >
+                  <font-awesome-icon
+                    icon="fa-solid fa-at"
+                    class="text-xl group-hover:text-white cursor-pointer transition-all duration-300 ease-linear"
+                  />
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script setup>
