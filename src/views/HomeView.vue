@@ -1,7 +1,7 @@
 <template>
   <Header />
   <section class="help">
-    <div class="container">
+    <div class="container lg:px-5">
       <div class="help-items">
         <h1
           class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"
@@ -14,7 +14,7 @@
         </h1>
         <div class="help-cards-container">
           <div class="help-card-image">
-            <img src="../assets/hero-img.jpg" alt="hero" />
+            <img src="../assets/Managed-It-Services-1.jpg" alt="hero" />
           </div>
           <div class="help-card-items">
             <div class="help-card-item">
@@ -65,7 +65,7 @@
     </div>
   </section>
   <section class="about">
-    <div class="container">
+    <div class="container px-5">
       <div class="about-items">
         <div class="about-content">
           <div class="about-content-title">
@@ -90,13 +90,13 @@
           </div>
         </div>
         <div class="about-img">
-          <img src="../assets/hero-img.jpg" alt="about-img" />
+          <img src="../assets/company-history.jpg" alt="about-img" />
         </div>
       </div>
     </div>
   </section>
   <setion class="service">
-    <div class="container">
+    <div class="container px-5">
       <div class="service-items">
         <p>POPULAR IT SERVICES</p>
         <h2>Our Professional Solutions<br />For IT Business</h2>
@@ -210,9 +210,11 @@
     </div>
   </setion>
   <section class="team mt-20 mb-52">
-    <div class="container mx-auto">
+    <div class="container lg:px-5 mx-auto">
       <div class="team-items w-full">
-        <div class="team-items-top w-full flex justify-between items-center">
+        <div
+          class="team-items-top w-full flex flex-col gap-5 md:gap-0 md:flex-row md:justify-between items-center select-none"
+        >
           <div class="team-items-top-left">
             <p class="text-blue-700 font-bold">EXCLUSIVE MEMBERS</p>
             <h2 class="text-blue-950 text-3xl font-bold">
@@ -243,17 +245,19 @@
             ></span>
           </a>
         </div>
-        <div class="team-items-cards mt-44">
+        <div
+          class="team-items-cards mt-44 md:mt-64 flex flex-col gap-40 md:gap-5 md:flex-row"
+        >
           <div
-            class="team-card flex flex-col items-center justify-center w-1/5 relative"
+            class="team-card flex flex-col items-center justify-center flex-wrap relative md:w-1/3 w-full px-10 md:px-0"
           >
             <img
               src="@/assets/hero-img.jpg"
               alt="team1"
-              class="w-3/4 h-52 object-cover absolute border-none rounded-lg -top-24"
+              class="w-1/2 md:w-3/4 h-52 lg:h-72 object-cover absolute border-none rounded-lg -top-24 lg:-top-40"
             />
             <div
-              class="w-full h-60 border-none rounded-lg bg-slate-100 hover:bg-blue-600 group transition-all duration-300 ease-linear flex flex-col justify-end"
+              class="w-full h-60 lg:h-72 border-none rounded-lg bg-slate-100 hover:bg-blue-600 group transition-all duration-300 ease-linear flex flex-col justify-end"
             >
               <p
                 class="member-name text-xl text-center font-bold opacity-90 group-hover:text-white group-hover:opacity-100 transition-all duration-300 ease-linear"
@@ -265,7 +269,9 @@
               >
                 Business Manager
               </p>
-              <p class="w-3/4 mx-auto flex justify-center gap-3 my-3">
+              <p
+                class="w-3/4 mx-auto flex justify-center gap-3 my-3 mb-5 md:mb-3"
+              >
                 <a
                   href="https://www.linkedin.com/in/madiyorjonodilov/"
                   target="_blank"
@@ -287,10 +293,115 @@
                     class="text-xl group-hover:text-white cursor-pointer transition-all duration-300 ease-linear"
                   />
                 </a>
+                <a href="mailto:odilovmadiyor029@gmail.com" target="_blank">
+                  <font-awesome-icon
+                    icon="fa-solid fa-at"
+                    class="text-xl group-hover:text-white cursor-pointer transition-all duration-300 ease-linear"
+                  />
+                </a>
+              </p>
+            </div>
+          </div>
+          <div
+            class="team-card flex flex-col items-center justify-center flex-wrap relative md:w-1/3 w-full px-10 md:px-0"
+          >
+            <img
+              src="@/assets/hero-img.jpg"
+              alt="team1"
+              class="w-1/2 md:w-3/4 h-52 lg:h-72 object-cover absolute border-none rounded-lg -top-24 lg:-top-40"
+            />
+            <div
+              class="w-full h-60 lg:h-72 border-none rounded-lg bg-slate-100 hover:bg-blue-600 group transition-all duration-300 ease-linear flex flex-col justify-end"
+            >
+              <p
+                class="member-name text-xl text-center font-bold opacity-90 group-hover:text-white group-hover:opacity-100 transition-all duration-300 ease-linear"
+              >
+                Wallace S. Camacho
+              </p>
+              <p
+                class="member-title text-md font-bold text-center opacity-50 group-hover:text-white group-hover:opacity-100 transition-all duration-300 ease-linear"
+              >
+                Business Manager
+              </p>
+              <p
+                class="w-3/4 mx-auto flex justify-center gap-3 my-3 mb-5 md:mb-3"
+              >
                 <a
-                  href="mail.google.com/odilovmadiyor029@gmail.com"
+                  href="https://www.linkedin.com/in/madiyorjonodilov/"
                   target="_blank"
                 >
+                  <font-awesome-icon
+                    icon="fa-brands fa-linkedin"
+                    class="text-xl group-hover:text-white cursor-pointer transition-all duration-300 ease-linear"
+                  />
+                </a>
+                <a href="https://github.com/madiyorbekodilov" target="_blank">
+                  <font-awesome-icon
+                    icon="fa-brands fa-github"
+                    class="text-xl group-hover:text-white cursor-pointer transition-all duration-300 ease-linear"
+                  />
+                </a>
+                <a href="https://t.me/Madiyorbek_Odilov" target="_blank">
+                  <font-awesome-icon
+                    icon="fa-brands fa-telegram"
+                    class="text-xl group-hover:text-white cursor-pointer transition-all duration-300 ease-linear"
+                  />
+                </a>
+                <a href="mailto:odilovmadiyor029@gmail.com" target="_blank">
+                  <font-awesome-icon
+                    icon="fa-solid fa-at"
+                    class="text-xl group-hover:text-white cursor-pointer transition-all duration-300 ease-linear"
+                  />
+                </a>
+              </p>
+            </div>
+          </div>
+          <div
+            class="team-card flex flex-col items-center justify-center flex-wrap relative md:w-1/3 w-full px-10 md:px-0"
+          >
+            <img
+              src="@/assets/hero-img.jpg"
+              alt="team1"
+              class="w-1/2 md:w-3/4 h-52 lg:h-72 object-cover absolute border-none rounded-lg -top-24 lg:-top-40"
+            />
+            <div
+              class="w-full h-60 lg:h-72 border-none rounded-lg bg-slate-100 hover:bg-blue-600 group transition-all duration-300 ease-linear flex flex-col justify-end"
+            >
+              <p
+                class="member-name text-xl text-center font-bold opacity-90 group-hover:text-white group-hover:opacity-100 transition-all duration-300 ease-linear"
+              >
+                Wallace S. Camacho
+              </p>
+              <p
+                class="member-title text-md font-bold text-center opacity-50 group-hover:text-white group-hover:opacity-100 transition-all duration-300 ease-linear"
+              >
+                Business Manager
+              </p>
+              <p
+                class="w-3/4 mx-auto flex justify-center gap-3 my-3 mb-5 md:mb-3"
+              >
+                <a
+                  href="https://www.linkedin.com/in/madiyorjonodilov/"
+                  target="_blank"
+                >
+                  <font-awesome-icon
+                    icon="fa-brands fa-linkedin"
+                    class="text-xl group-hover:text-white cursor-pointer transition-all duration-300 ease-linear"
+                  />
+                </a>
+                <a href="https://github.com/madiyorbekodilov" target="_blank">
+                  <font-awesome-icon
+                    icon="fa-brands fa-github"
+                    class="text-xl group-hover:text-white cursor-pointer transition-all duration-300 ease-linear"
+                  />
+                </a>
+                <a href="https://t.me/Madiyorbek_Odilov" target="_blank">
+                  <font-awesome-icon
+                    icon="fa-brands fa-telegram"
+                    class="text-xl group-hover:text-white cursor-pointer transition-all duration-300 ease-linear"
+                  />
+                </a>
+                <a href="mailto:odilovmadiyor029@gmail.com" target="_blank">
                   <font-awesome-icon
                     icon="fa-solid fa-at"
                     class="text-xl group-hover:text-white cursor-pointer transition-all duration-300 ease-linear"
@@ -337,6 +448,7 @@ import Header from "../components/Header.vue";
     width: 100%;
     height: 100%;
     object-fit: cover;
+
     border-radius: 10px;
   }
 }
