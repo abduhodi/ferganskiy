@@ -1,6 +1,6 @@
 <template>
   <Header />
-  <section class="help">
+  <section class="help" id="home">
     <div class="container lg:px-5">
       <div class="help-items">
         <h1
@@ -64,7 +64,7 @@
       </div>
     </div>
   </section>
-  <section class="about">
+  <section class="about" id="about">
     <div class="container px-5">
       <div class="about-items">
         <div class="about-content">
@@ -95,7 +95,7 @@
       </div>
     </div>
   </section>
-  <setion class="service">
+  <setion class="service" id="service">
     <div class="container px-5">
       <div class="service-items">
         <p>POPULAR IT SERVICES</p>
@@ -209,7 +209,7 @@
       </div>
     </div>
   </setion>
-  <section class="team mt-20 mb-52">
+  <section class="team mt-20 mb-24" id="team">
     <div class="container lg:px-5 mx-auto">
       <div class="team-items w-full">
         <div
@@ -414,10 +414,112 @@
       </div>
     </div>
   </section>
+  <section class="contact my-10 w-full" id="contact">
+    <div class="container px-5 lg:px-20">
+      <div
+        class="contact flex justify-between flex-col md:flex-row gap-5 lg:gap-10"
+      >
+        <div class="contact-form w-full md:w-1/3">
+          <a
+            href=""
+            class="contact-logo text-2xl font-semibold text-blue-700 cursor-pointer"
+          >
+            Ferganskiy
+          </a>
+          <p class="contact-text w-4/5 my-5 text-gray-600">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem,
+            totam natus rerum fugit libero, ducimus officia labore quaerat
+            repellat explicabo provident sit impedit!
+          </p>
+
+          <form
+            class="contact-input flex gap-1 h-10"
+            @submit.prevent="send_email"
+          >
+            <input
+              v-model="email"
+              type="email"
+              placeholder="Email Address"
+              required
+              class="w-full border-none bg-slate-300 rounded-md focus:border-none focus:outline-none outline-none"
+            />
+            <button
+              type="submit"
+              class="send-btn bg-slate-300 rounded-md px-3 cursor-pointer group flex justify-center"
+            >
+              <img
+                src="@/assets/send-message.png"
+                alt="send"
+                class="object-cover h-full scale-50 group-hover:scale-75 transition-all duration-150 ease-linear"
+              />
+            </button>
+          </form>
+        </div>
+        <div class="company flex mt-5 md:mt-0 w-[200px] flex-col gap-1">
+          <h1 class="text-xl font-bold mb-5">Company</h1>
+          <a href="#about" class="text-slate-600"
+            ><font-awesome-icon icon="fa-solid fa-angles-right" /><span
+              class="text-lg font-semibold ml-3"
+              >About Us</span
+            ></a
+          >
+          <a href="#home" class="text-slate-600"
+            ><font-awesome-icon icon="fa-solid fa-angles-right" /><span
+              class="text-lg font-semibold ml-3"
+              >Blog</span
+            ></a
+          >
+          <a href="#service" class="text-slate-600"
+            ><font-awesome-icon icon="fa-solid fa-angles-right" /><span
+              class="text-lg font-semibold ml-3"
+              >Service</span
+            ></a
+          >
+          <a href="#team" class="text-slate-600"
+            ><font-awesome-icon icon="fa-solid fa-angles-right" /><span
+              class="text-lg font-semibold ml-3"
+              >Team</span
+            ></a
+          >
+        </div>
+        <div class="contact-address flex flex-col gap-5 mt-5 md:mt-0">
+          <h1 class="text-xl font-bold mb-5">Contact Us</h1>
+          <span class="flex justify-start items-center gap-5 text-xl">
+            <font-awesome-icon
+              icon="fa-solid fa-location-dot"
+              class="text-blue-700 text-2xl"
+            />
+            <span>42 Haqiqat, Quva, Fergana, Uzbekistan</span>
+          </span>
+          <span class="flex justify-start items-center gap-5 text-xl">
+            <font-awesome-icon
+              icon="fa-solid fa-envelope-open-text"
+              class="text-blue-700 text-2xl"
+            />
+            <span>odilovmadiyor029@gmail.com</span>
+          </span>
+          <span class="flex justify-start items-center gap-5 text-xl">
+            <font-awesome-icon
+              icon="fa-solid fa-phone-flip"
+              class="text-blue-700 text-2xl"
+            />
+            <span>+99890 363 83 33</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script setup>
-import Header from "../components/Header.vue";
+import Header from "@/components/Header.vue";
+import notify from "@/plugins/Notification.js";
+import { ref } from "vue";
+const email = ref("");
+const send_email = () => {
+  email.value = "";
+  notify.success("Email send. We'll contact you soon!");
+};
 </script>
 
 <style lang="scss" scoped>

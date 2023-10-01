@@ -10,6 +10,10 @@ import {
   faGear,
   faReceipt,
   faAt,
+  faAnglesRight,
+  faLocationDot,
+  faPhoneFlip,
+  faEnvelopeOpenText,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faWhatsapp,
@@ -29,6 +33,10 @@ library.add(
   faLinkedin,
   faGithub,
   faTelegram,
-  faAt
+  faAt,
+  faAnglesRight,
+  faLocationDot,
+  faPhoneFlip,
+  faEnvelopeOpenText
 );
 export default library;
