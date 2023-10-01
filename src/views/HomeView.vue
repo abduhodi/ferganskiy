@@ -306,7 +306,7 @@
             class="team-card flex flex-col items-center justify-center flex-wrap relative md:w-1/3 w-full px-10 md:px-0"
           >
             <img
-              src="@/assets/hero-img.jpg"
+              src="@/assets/team.jpg"
               alt="team1"
               class="w-1/2 md:w-3/4 h-52 lg:h-72 object-cover absolute border-none rounded-lg -top-24 lg:-top-40"
             />
@@ -316,18 +316,18 @@
               <p
                 class="member-name text-xl text-center font-bold opacity-90 group-hover:text-white group-hover:opacity-100 transition-all duration-300 ease-linear"
               >
-                Wallace S. Camacho
+                Azmiddin Qurbonov
               </p>
               <p
                 class="member-title text-md font-bold text-center opacity-50 group-hover:text-white group-hover:opacity-100 transition-all duration-300 ease-linear"
               >
-                Business Manager
+                Team Lead
               </p>
               <p
                 class="w-3/4 mx-auto flex justify-center gap-3 my-3 mb-5 md:mb-3"
               >
                 <a
-                  href="https://www.linkedin.com/in/madiyorjonodilov/"
+                  href="https://www.linkedin.com/in/azmiddin-qurbonov-325598249/"
                   target="_blank"
                 >
                   <font-awesome-icon
@@ -335,19 +335,19 @@
                     class="text-xl group-hover:text-white cursor-pointer transition-all duration-300 ease-linear"
                   />
                 </a>
-                <a href="https://github.com/madiyorbekodilov" target="_blank">
+                <a href="https://github.com/AlwaysDotNet" target="_blank">
                   <font-awesome-icon
                     icon="fa-brands fa-github"
                     class="text-xl group-hover:text-white cursor-pointer transition-all duration-300 ease-linear"
                   />
                 </a>
-                <a href="https://t.me/Madiyorbek_Odilov" target="_blank">
+                <a href="https://t.me/algoplus" target="_blank">
                   <font-awesome-icon
                     icon="fa-brands fa-telegram"
                     class="text-xl group-hover:text-white cursor-pointer transition-all duration-300 ease-linear"
                   />
                 </a>
-                <a href="mailto:odilovmadiyor029@gmail.com" target="_blank">
+                <a href="mailto:aziktuit@gmail.com" target="_blank">
                   <font-awesome-icon
                     icon="fa-solid fa-at"
                     class="text-xl group-hover:text-white cursor-pointer transition-all duration-300 ease-linear"
